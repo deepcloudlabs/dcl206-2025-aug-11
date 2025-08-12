@@ -4,6 +4,7 @@ import java.util.function.Predicate;
 
 public class Exercise01 {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		try {
 			

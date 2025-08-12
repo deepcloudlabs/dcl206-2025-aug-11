@@ -1,11 +1,10 @@
 package com.example.javase14;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 public class Exercise03 {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		List<Point> points = List.of(
 				new Point(1,2),

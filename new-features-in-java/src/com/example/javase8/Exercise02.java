@@ -2,6 +2,7 @@ package com.example.javase8;
 
 public class Exercise02 {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		// Imperative Programming
 		// Problem -> Algorithm/Flow -> Solution

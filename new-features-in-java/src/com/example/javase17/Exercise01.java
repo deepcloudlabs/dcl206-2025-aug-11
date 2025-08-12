@@ -4,6 +4,7 @@ import java.util.List;
 
 public class Exercise01 {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		var animals = List.of(new Cat(), new Spider(), new Cat(), new Spider());
 		for (var animal : animals) {

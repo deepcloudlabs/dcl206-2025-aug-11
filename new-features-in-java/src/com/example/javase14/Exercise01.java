@@ -5,6 +5,7 @@ import java.util.List;
 
 public class Exercise01 {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		// integral types: byte, short, int, long -> signed
 		byte z = 42; // 1B, [-128..127]

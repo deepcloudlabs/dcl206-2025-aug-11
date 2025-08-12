@@ -4,6 +4,7 @@ import java.util.List;
 
 public class Exercise01 {
     
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		var x = 42.0F; // c++: auto x = 42.0;
         
