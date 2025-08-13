@@ -2,7 +2,7 @@ package com.example.javase11;
 
 public class Exercise01 {
 
-	@SuppressWarnings("unused")
+	@SuppressWarnings({ "unused" })
 	public static void main(String[] args) {
 		Fun fun1 = (u,v) -> u + v;
 		Fun fun2 = (double u,double v) -> u * v;
