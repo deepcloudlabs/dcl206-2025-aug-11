@@ -1,7 +1,6 @@
 package com.example.exercises;
 
 import java.util.List;
-import java.util.concurrent.ThreadLocalRandom;
 
 public class Exercise04 {
 
