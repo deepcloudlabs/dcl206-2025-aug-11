@@ -3,8 +3,11 @@ package com.example.random.service.business;
 import java.security.SecureRandom;
 import java.util.List;
 
+import com.example.random.service.Qualifier;
+import com.example.random.service.QualityOfService;
 import com.example.random.service.RandomNumberService;
 
+@Qualifier(QualityOfService.SECURE)
 public class SecureRandomNumberService implements RandomNumberService {
 	private SecureRandom random = new SecureRandom();
 	
