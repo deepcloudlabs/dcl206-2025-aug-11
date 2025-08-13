@@ -43,8 +43,10 @@ public class Exercise01 {
               .parallel() // multi-core programming
               //.map( movie -> movie.getDirectors())          // Stream<Collection<Director>>
               .map( Movie::getDirectors )          // Stream<Collection<Director>>
+              .peek(System.out::println)
               //.flatMap(collection -> collection.stream())   // Stream<Director>
               .flatMap(Collection::stream)   // Stream<Director>
+              .peek(System.out::println)
               .collect(groupingBy(identity(),counting()))
               .forEach((director,count) -> System.out.println("%24s: %d".formatted(director.getName(),count)));
         // clean version

@@ -15,6 +15,7 @@ public class Exercise02 {
 		InMemoryWorldDao.getInstance()
 		                .findAllCities()
 		                .stream()
+		                .peek(System.out::println)
 		                .collect(maxBy(comparingLong(City::getPopulation)))
 		                .ifPresent(System.out::println);
 	}
