@@ -19,8 +19,6 @@ public class CpuAffinityLinux {
 							ValueLayout.ADDRESS) // cpu_set_t*
 			);
 
-			// CPU_SET macro manually: cpu_set_t is usually 128 bytes on Linux (for 1024
-			// CPUs)
 			int CPU_SETSIZE = 1024;
 			int CPU_SET_BYTES = CPU_SETSIZE / 8;
 			MemorySegment cpuset = arena.allocate(CPU_SET_BYTES);
