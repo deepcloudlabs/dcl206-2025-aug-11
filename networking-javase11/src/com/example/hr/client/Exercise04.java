@@ -11,7 +11,7 @@ public class Exercise04 {
 	public static void main(String[] args) throws InterruptedException, ExecutionException {
 	     ExecutorService es = Executors.newFixedThreadPool(16);
 	     var myTask = new MyTask();
-	     var futures = new ArrayList<Future>();
+	     var futures = new ArrayList<Future<?>>();
 	     for (var i=0;i<100;++i) {
 			 futures.add(es.submit(myTask));
 	     }

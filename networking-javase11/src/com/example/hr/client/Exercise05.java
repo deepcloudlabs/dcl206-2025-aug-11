@@ -13,9 +13,11 @@ public class Exercise05 {
         // Toggle between request(1) and request(100) here
         final int initialRequest = 100;  
 
-        WebSocket ws = client.newWebSocketBuilder()
+        @SuppressWarnings("unused")
+		WebSocket ws = client.newWebSocketBuilder()
             .buildAsync(URI.create("wss://ws.postman-echo.com/raw"), new Listener() {
-                int count = 0;
+                @SuppressWarnings("unused")
+				int count = 0;
 
                 @Override
                 public void onOpen(WebSocket webSocket) {
