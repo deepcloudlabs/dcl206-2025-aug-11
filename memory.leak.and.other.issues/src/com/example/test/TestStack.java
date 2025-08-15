@@ -33,5 +33,5 @@ public class TestStack {
 
 class LargeObject {
 	@SuppressWarnings("unused")
-	private int[] array = new int[1024 * 1024];
+	private int[] array = new int[4 * 1024];
 }
